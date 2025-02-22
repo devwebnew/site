@@ -21,7 +21,8 @@
     </header>
     <section id="sobre">
         <h2>SOBRE</h2>
-        <img src="https://cpv.ifsp.edu.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png" alt="img" title="teste"/>
+        <img src="https://cpv.ifsp.edu.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png" alt="img"
+            title="teste" />
 
         <article>
             <p>
@@ -46,14 +47,71 @@
             </p>
         </article>
     </section>
+    <section id="habilidades">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Tecnologia</th>
+                    <th>Nível</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Intermediário</td>
+                    <td>Capaz de construir estruturas de site html5</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>iniciante</td>
+                    <td>Capaz de construir estruturas de site com folhas de estilo</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>básico</td>
+                    <td>Desenvolve scripts em JS</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
     <footer>
         <p>Name &copy; 2022</p>
         <section id="contato">
             <h2>Contato</h2>
+
+            <p>Entre em contato.</p>
             <address>
                 e-mail: <a href="mailto:email@gmail.com">email@gmail.com</a><br>
                 telefone: <a href="tel:123456789">123456789</a>
             </address>
+            <form action="#">
+
+                <label for="nome">nome:</label>
+                <input type="text" id="nome" name="nome" required><br>
+
+                <label for="email">e-mail:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="telefone">telefone:</label>
+                <input type="tel" id="telefone" name="telefone"><br>
+
+                <input type="date"><br>
+
+                <label for="assunto">assunto:</label>
+                <select name="assunto" id="assunto">
+                    <option value="duvida">dúvida</option>
+                    <option value="orcamento">orçamento</option>
+                    <option value="outro">outro</option>
+                </select><br>
+
+                <label for="mensagem">mensagem:</label>
+                <textarea name="mensagem" id="mensagem" cols="20" rows="5"></textarea><br>
+
+                <input type="checkbox" name="inscricao" id="inscricao">
+                <label for="inscricao">Deseja receber nossa newsletters?</label><br>
+                <input type="submit" value="Enviar mensagem">
+            </form>
         </section>
     </footer>
 </body>
